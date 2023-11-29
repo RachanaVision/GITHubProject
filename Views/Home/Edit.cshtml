@@ -1,0 +1,23 @@
+﻿
+<br />
+<br />
+
+<div style="padding-top:20px" class="d-inline">
+    <label class="d-inline">Description:</label>
+    <div style="padding-left:42px;" class="d-inline">
+        <input type="text" id="description" style="width:250px; height:30px;" />
+    </div>
+</div>
+<br />
+<br />
+<div style="padding-left:127px;">
+    <input type="button" value="Submit" onclick="EditRepositoryDescription()" class="btn btn-default btn-success" />
+    <input type="button" value="Cancel" onclick="CancelClick()" class="btn btn-default btn-danger" />
+</div>
+<script>
+    $(document).ready(function () {
+        GetRepoDetails();
+    })   
+</script>
+
+<script src="~/js/GitHubOperation.js"></script>
